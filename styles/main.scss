@@ -1,3 +1,48 @@
 body {
-  background-color: magenta;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  background-color: #202b55;
+  max-width: 800px;
+}
+
+.container {
+  background-image: linear-gradient(#202b55, #202b55, #588ed7, #62a0d1);
+  max-width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  color: #fafafa;
+}
+
+input.checkbox {
+  margin: 12px;
+}
+
+.checkText {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+a {
+  padding: 12px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+i {
+  color: #fafafa;
 }

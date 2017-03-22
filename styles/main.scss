@@ -6,8 +6,19 @@ body {
 }
 
 header {
-  background-color: #202b55;
   max-width: 800px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+header input {
+  background-color: #202b55;
+  padding: 6px;
+  border: 1px solid #a9bcdb;
+  color: #a9bcdb;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
 }
 
 .container {
@@ -23,16 +34,20 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
-  color: #fafafa;
+  color: #e3ebfc;
+  border: 2px solid #a9bcdb;
+  margin: 0 12px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
 }
 
 input.checkbox {
-  margin: 12px;
+  margin: 21px;
+  color: #e3ebfc;
 }
 
 .checkText {
   padding: 12px;
-  font-size: 1rem;
 }
 
 a {
@@ -44,5 +59,17 @@ a {
 }
 
 i {
-  color: #fafafa;
+  color: #e3ebfc;
+}
+
+.submit {
+  color: #e3ebfc;
+  background-color: #202b55;
+  border: 1px solid #e3ebfc;
+  margin: 12px;
+  padding: 12px;
+}
+
+label {
+  padding: 12px;
 }

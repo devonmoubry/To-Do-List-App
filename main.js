@@ -16,13 +16,13 @@ function renderToDoList() {
 
     $.ajax(settings).then(function(data, status, xhr) {
         data.forEach(function(task, key, listObj, argument) {
-            $('ul').append('<li><input type="checkbox" id="' + task._id + '"><label for="' + task._id + '">' + task.task + '</label><a id="' + task._id + '" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>');
+            $('ul').append('<li><input type="checkbox" class="checkbox" id="' + task._id + '"><label for="' + task._id + '">' + task.task + '</label><a id="' + task._id + '" href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>');
         })
 
-        // $('input').on('change', function(event) {
-        //   console.log(event.currentTarget.labels[0]);
-        //   $('event.currentTarget.labels[0]').addClass('checked');
-        // })
+        $('.checkbox').on('change', function(event) {
+          var className = event.currentTarget.labels;
+          $(className).addClass('checked');
+        })
 
         $('a').on('click', function(event) {
             var id = event.currentTarget.id;
